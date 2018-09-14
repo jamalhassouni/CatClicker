@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cat Clicker Premium Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div id="catList">
+        <h1>Cats list</h1>
+        <ul id="listOfCats">
+        </ul>
+    </div>
+    <div class="cat" id="catArea">
+        <img id="cat-img" src="" alt="cute cat">
+        <h2 id="cat-name"></h2>
+        <div id="cat-count"></div>
+        <div class="admin">
+            <button id="admin-btn">Admin</button>
+            <div id="form" class="hide container">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name"> Cat Name : </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="name" id="formName">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="url"> Cat Url : </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="url" id="formUrl">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="count"> Count : </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="count" id="formCount">
+                    </div>
+                </div>
+                <div class="row">
+                    <button id="save">Save</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
