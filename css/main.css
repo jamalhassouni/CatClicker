@@ -1,0 +1,94 @@
+*{
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+body{
+    margin: 38px 31px auto; 
+}
+#catArea{
+width: 700px;
+float: left;
+}
+.cat img{
+width: 300px;
+height: 199px;
+}
+#catList{
+width: 300px;
+float: left;
+}
+#listOfCats{
+list-style: none;
+}
+#listOfCats li{
+cursor: pointer;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.hide{
+display: none;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+button:not(#admin-btn) {
+    background-color: #fd79a8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-left: 10px;
+}
+button#save {
+    background-color: #00b894;
+}
+#admin-btn{
+    background-color: #d63031;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, button {
+        width: 100%;
+        margin-top: 0;
+    }
+}
