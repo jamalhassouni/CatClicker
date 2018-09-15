@@ -1,36 +1,3 @@
-var catArea = document.getElementById('catArea');
-var listCat = document.querySelectorAll("#listOfCats li");
-for (var i = 0; i < listCat.length; i++) {
-    var cat = listCat[i];
-    cat.addEventListener("click", (function(catElem) {
-        return function() {
-            catArea.innerHTML = "";
-            var elem = document.createElement("div");
-            var h3 = document.createElement("h3");
-            h3.textContent = catElem.dataset.name;
-            var img = document.createElement("img");
-            img.id = catElem.dataset.name;
-            img.src = catElem.dataset.src;
-            var span = document.createElement("span");
-            var strongElem = document.createElement("strong");
-            strongElem.id = 'numClick';
-            strongElem.textContent = catElem.dataset.click;
-            span.textContent = "click : ";
-            span.appendChild(strongElem);
-            elem.appendChild(img);
-            elem.appendChild(h3);
-            elem.appendChild(span);
-            catArea.appendChild(elem);
-            img.addEventListener('click', function() {
-                catElem.dataset.click = parseInt(catElem.dataset.click) + 1;
-                numClick.textContent = catElem.dataset.click;
-
-            });
-        };
-    })(cat));
-}
-
-
 /* ===  Model === */
 var model = {
     currentCat: null,
