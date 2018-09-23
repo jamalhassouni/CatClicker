@@ -1,6 +1,10 @@
 
 # CatClicker
 
+## Details
 
-project created for Udacity's JavaScript Design Patterns course
+
+This is the cat clicker project from the Udacity course Javascript Design Patterns used to teach the MVVM design pattern
+
+
 
